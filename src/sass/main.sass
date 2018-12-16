@@ -1,0 +1,57 @@
+body
+    font-family: $main-font
+
+// Override to remove horizontal scroll on container-fluid due to p-0
+.container-fluid
+    overflow: hidden
+
+// Override
+p
+    margin-bottom: 0
+
+.sep-medium
+    display: block
+    padding-bottom: $sep-medium
+
+.code-text
+    color: $code-font-color
+    font-size: $small-text
+
+h1
+    font-weight: bold
+    color: $dark-blue
+    font-size: $large-text
+
+.main-section
+    padding-top: 7.7rem
+    padding-left: 2rem
+
+.description-text
+    color: $dark-grey
+
+.button
+    padding: 1rem 3rem
+    margin-right: 1rem
+    border: 2px solid $primary-color
+    text-align: center
+    font-weight: bold
+    font-size: $big-text
+
+    &--container
+        float: left
+
+    &-primary
+        background-color: $primary-color
+        color: $dark-blue
+        border: 2px solid $primary-color
+
+    &-secondary
+        color: $green
+
+footer
+    padding: 0.1rem
+    font-size: $small-text
+    background-color: $dim-white
+
+
+
