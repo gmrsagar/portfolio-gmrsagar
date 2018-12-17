@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group-7" transform="translate(5.000000, 6.000000)" stroke="#333161">
+            <polygon id="Stroke-1" points="3.00623158 2.57884211 1.05233684 0.210421053 0.000126315789 8.66494737 2.40517895 12.4996842"></polygon>
+            <polygon id="Stroke-3" points="2.40507368 12.4997053 3.00612632 2.57886316 15.3322316 2.57886316 15.9703368 12.4997053"></polygon>
+            <path d="M2.98690526,2.73684211 L8.71743158,8.28821053 C9.26122105,8.81515789 10.1378526,8.76968421 10.6243789,8.18968421 L15.3323789,2.57894737 L13.0005895,0.210526316 L1.05237895,0.210526316" id="Stroke-5"></path>
+        </g>
+    </g>
+</svg>

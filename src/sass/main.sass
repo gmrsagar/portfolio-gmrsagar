@@ -19,7 +19,7 @@ p
 
 h1
     font-weight: bold
-    color: $dark-blue
+    color: $secondary-color
     font-size: $large-text
 
 .main-section
@@ -37,16 +37,29 @@ h1
     font-weight: bold
     font-size: $big-text
 
+    &:hover
+        background-color: $secondary-color
+        border-color: $secondary-color
+        color: $white
+        box-shadow: 10px 10px 0 $primary-color
+        transition: all 0.6s ease
+
     &--container
         float: left
 
     &-primary
         background-color: $primary-color
-        color: $dark-blue
+        color: $secondary-color
         border: 2px solid $primary-color
 
     &-secondary
         color: $green
+
+        &:hover
+            background-color: $primary-color
+            border-color: $primary-color
+            color: $secondary-color
+            box-shadow: 10px 10px 0 $secondary-color
 
 footer
     padding: 0.1rem
