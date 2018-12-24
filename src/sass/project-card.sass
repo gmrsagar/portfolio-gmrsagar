@@ -1,0 +1,41 @@
+.project-card
+    border: 1px solid $light-grey
+    border-radius: 4px
+    overflow: hidden
+
+    &-info
+        padding: 1.2rem 0.5rem
+
+    &-description
+        color: $dark-grey
+        font-size: 0.9rem
+        line-height: 1.2rem
+        font-family: $text-font
+
+    &-image
+        width: 100%
+    
+    &:nth-child(odd)
+        margin-right: 1rem
+
+    &-title
+        font-weight: bold
+        font-size: $big-text
+        color: $secondary-color
+
+.project-tech
+    font-size: $small-text
+    color: $dark-grey
+
+    &--holder
+        margin-top: 0.4rem
+
+    &::before
+        width: 10px
+        border-radius: 20px
+        content: ''
+        display: inline-block
+        height: 10px
+        background-color: $yellow
+        margin-right: 0.2rem
+
