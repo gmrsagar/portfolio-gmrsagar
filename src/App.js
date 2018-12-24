@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
 // illustrations
-import hero_illustration from './img/hero-illustration.png';
+import hero_illustration from './img/hero-illustration.svg';
 
 //style
 import './.App.sass';
@@ -19,6 +19,7 @@ class App extends Component {
         <div className="row">
           <div className="col-2">
             <Sidebar/>
+
           </div>
           
 

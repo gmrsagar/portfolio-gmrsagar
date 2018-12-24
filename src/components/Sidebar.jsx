@@ -12,46 +12,72 @@ import Icon_contact_active from '../img/contact_active.svg';
 import Icon_contact from '../img/contact.svg';
 
 class Sidebar extends Component {
+// this needs to be done in a better way
+  state = {
+    navImages: {
+      imgHome: Icon_home,
+      imgWorks: Icon_work,
+      imgAbout: Icon_about,
+      imgContact: Icon_contact
+    }
+  }
+
+  changeNavImage = (ele, newImage) => {
+    let navImages = { ...this.state.navImages }
+    navImages[ele] = newImage
+    this.setState({ navImages })
+  }
+
     render() {
         return (
             <AutoAffix>
-          <div className="sidebar pl-4">
-            <div className="App-logo--holder">
-            <div className="App-logo">SG</div>
-            </div>
-            {/*
-              * Navigation
-              */}
-            <div className="nav">
-              <div className="nav-item pb-3 active">
-                <div className="nav-icon--holder">
-                <img src={ Icon_home_active } alt="Home" className="nav-icon"/>
+                      <div className="sidebar pl-5 pt-4">
+              <div className="App-logo">SG</div>
+              {/*
+                * Navigation
+                */}
+              <div className="nav">
+                <div className="nav-item pb-3 active">
+                  <div className="nav-icon--holder">
+                  <img src={ this.state.navImages.imgHome }  alt="Home" className="nav-icon"/>
+                  </div>
+                  <div 
+                    onMouseEnter={ () => this.changeNavImage('imgHome', Icon_home_active) }
+                    onMouseLeave={ () => this.changeNavImage('imgHome', Icon_home ) }
+                    className="nav-title">Home</div>
                 </div>
-                <div className="nav-title">Home</div>
-              </div>
-              <div className="nav-item pb-3">
-                <div className="nav-icon--holder">
-                <img src={ Icon_work } alt="" className="nav-icon"/>
+                <div className="nav-item pb-3">
+                  <div className="nav-icon--holder">
+                  <img src={ this.state.navImages.imgWorks } alt="" className="nav-icon"/>
+                  </div>
+                  <div
+                    onMouseEnter={ () => this.changeNavImage('imgWorks', Icon_work_active) }
+                    onMouseLeave={ () => this.changeNavImage('imgWorks', Icon_work ) }
+                    className="nav-title">My Works
+                  </div>
                 </div>
-                <div className="nav-title">My Works</div>
-              </div>
-              <div className="nav-item pb-3">
-                <div className="nav-icon--holder">
-                <img src={ Icon_about } alt="" className="nav-icon"/>
+                <div className="nav-item pb-3">
+                  <div className="nav-icon--holder">
+                  <img src={ this.state.navImages.imgAbout }  alt="" className="nav-icon"/>
+                  </div>
+                  <div 
+                    onMouseEnter={ () => this.changeNavImage('imgWork', Icon_work_active) }
+                    onMouseLeave={ () => this.changeNavImage('imgWork', Icon_work ) }
+                    className="nav-title">About Me</div>
                 </div>
-                <div className="nav-title">About Me</div>
-              </div>
-              <div className="nav-item pb-3">
-                <div className="nav-icon--holder">
-                <img src={ Icon_contact } alt="" className="nav-icon"/>
+                <div className="nav-item pb-3">
+                  <div className="nav-icon--holder">
+                  <img src={ Icon_contact } alt="" className="nav-icon"/>
+                  </div>
+                  <div className="nav-title">Contact Me</div>
                 </div>
-                <div className="nav-title">Contact Me</div>
               </div>
-            </div>
 
-          </div>
+            </div>
           </AutoAffix>
-        )
+
+          
+        );
     }
 }
 

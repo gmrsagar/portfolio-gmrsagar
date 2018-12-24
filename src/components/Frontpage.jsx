@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import hero_illustration from '../img/hero-illustration.png';
+import hero_illustration from '../img/hero-illustration.svg';
 import Social from '../components/Social';
 
 
