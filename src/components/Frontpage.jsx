@@ -19,11 +19,9 @@ class Frontpage extends Component{
                 <div className="code-text"> &lt; h1 &gt;</div>
                 <h1>Hello World, <br/> I am Sagar Ghimire.</h1>
                 <div className="code-text"> &lt; /h1 &gt;</div>
-                <div className="code-text"> &lt; p &gt;</div>
                 <p className="description-text">
                   I am a Web Developer and I help businesses build digital solutions using JavaScript, php and more..
                 </p>
-                <div className="code-text"> &lt; /p &gt;</div>
               </div>
             </div>
 
