@@ -14,7 +14,7 @@ class ProjectCard extends Component {
                 <div className="col-8">
                     <div className="project-card-info">
                         <div className="project-card-title">
-                            ChordPro
+                            { this.props.work.name }
                         </div>
                         <div className="project-card-description">
                             A chord progression generator that that ahta h a chord progression  gen gen gen a chord
