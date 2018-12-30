@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
-// illustrations
+// Illustrations
 import hero_illustration from './img/hero-illustration.svg';
 
-//style
+// Style 
 import './.App.sass';
+
+// Components
 import Sidebar from './components/Sidebar';
 import Frontpage from './components/Frontpage';
 import Work from './components/Work';
+import Contact from './components/Contact';
 
 
 class App extends Component {
@@ -19,25 +22,26 @@ class App extends Component {
         <div className="row">
           <div className="col-2">
             <Sidebar/>
-
           </div>
-          
-
           <div className="col-10">
             <Frontpage />
           </div>
-
-        </div>  {/* row ends */}
-        <div className="row">
-          <div className="offset-2">
-          </div>
-          <div className="col-10">
-            <Work/>
-          </div>
         </div>
-      </div>
+
+
+
+          {/* Add new components here *************************************** */}
+            <Work/>
+            <Contact/>
+
+
+
       
+            <div className="sep-large"></div>
+      </div> {/* container-fluid ends */}
       
+
+
     <footer className="fixed-bottom">
       links
     </footer>
