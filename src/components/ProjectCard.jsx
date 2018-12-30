@@ -8,7 +8,7 @@ class ProjectCard extends Component {
                 <div className="row no-gutters">
                 <div className="col-4">
                     <div className="project-card-image--holder">
-                        <img src={ Chordpro_image } class="project-card-image" alt=""/>
+                        <img src={ this.props.work.img } class="project-card-image" alt=""/>
                     </div>
                 </div>
                 <div className="col-8">
@@ -17,13 +17,13 @@ class ProjectCard extends Component {
                             { this.props.work.name }
                         </div>
                         <div className="project-card-description">
-                            A chord progression generator that that ahta h a chord progression  gen gen gen a chord
+                            { this.props.work.content }
                         </div>
                         <div className="project-tech--holder">
                             <div className="project-tech">ReactJS</div>
                         </div>
                         <div className="button-nobg--holder">
-                            <div className="button-nobg mr-4">View on Github</div>
+                            <a href={this.props.work.git} className="button-nobg mr-4">View on Github</a>
                             <div className="button-nobg">View Story</div>
                         </div>
                     </div>

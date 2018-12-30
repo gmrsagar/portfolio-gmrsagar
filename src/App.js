@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'react-bootstrap';
-
-// illustrations
-import hero_illustration from './img/hero-illustration.svg';
-
+import { Route } from 'react-router-dom';
 //style
 import './.App.sass';
 import Sidebar from './components/Sidebar';
@@ -19,28 +15,25 @@ class App extends Component {
         <div className="row">
           <div className="col-2">
             <Sidebar/>
-
           </div>
-          
-
           <div className="col-10">
-            <Frontpage />
+            <Route exact path="/" component={Frontpage}></Route>
+            <Route path="/my_works" component={Work}></Route>
+            {/* <Frontpage /> */}
           </div>
-
         </div>  {/* row ends */}
         <div className="row">
           <div className="offset-2">
           </div>
           <div className="col-10">
-            <Work/>
+            {/* <Work/> */}
           </div>
         </div>
       </div>
       
-      
-    <footer className="fixed-bottom">
-      links
-    </footer>
+      <footer className="fixed-bottom">
+        links
+      </footer>
 
     </div>
     );

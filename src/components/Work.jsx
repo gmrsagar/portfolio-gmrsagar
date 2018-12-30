@@ -1,24 +1,16 @@
 import React, { Component } from 'react';
 import ProjectCard from '../components/ProjectCard';
-import axios from 'axios';
+import WORKS from '../initProject.json'
+
 
 class Work extends Component {
 
 	state = {
-		works: []
+		works: WORKS
 	}
 
 	componentDidMount() {
-		axios.get('https://api.github.com/users/gmrsagar/repos')
-			.then( data => {
-				console.log(data.data)
-				this.setState({
-					works: data.data
-				})
-			})
-			.catch( error => {
-				console.log(error)
-			})
+
 	}
 
 	render() {
@@ -32,25 +24,7 @@ class Work extends Component {
 					<div className="row no-gutters">
 						<div className="col-11">
 							<div className="row">
-								{
-									this.state.works.map( work => {
-										return <div className="col-md-6">
-									<ProjectCard work={work}/>
-								</div>
-									})
-								}
-								{/* <div className="col-md-6">
-									<ProjectCard/>
-								</div>
-								<div className="col-md-6">
-									<ProjectCard/>
-								</div>
-								<div className="col-md-6">
-									<ProjectCard/>
-								</div>
-								<div className="col-md-6">
-									<ProjectCard/>
-								</div> */}
+								{ this.state.works.map( work => <div className="col-md-6"><ProjectCard work={work}/></div> )}
 							</div>
 						</div>
 					</div>
