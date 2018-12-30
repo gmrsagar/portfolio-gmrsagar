@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import { Row, Col } from 'react-bootstrap';
+import { Route } from 'react-router-dom';
 
 // Illustrations
 import hero_illustration from './img/hero-illustration.svg';
 
-// Style 
-=======
-import { Route } from 'react-router-dom';
-//style
->>>>>>> 2c27359268cb61f7bf47b9e00e7ff98a8dedc153
+// Style
 import './.App.sass';
 
 // Components
