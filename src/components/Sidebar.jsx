@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { AutoAffix } from 'react-overlays'
+import { Link } from "react-router-dom";
 
 // sidebar-icons
 import Icon_home_active from '../img/home_active.svg';
@@ -36,6 +37,7 @@ class Sidebar extends Component {
               {/*
                 * Navigation
                 */}
+                
               <div className="nav">
                 <div className="nav-item pb-3 active">
                   <div className="nav-icon--holder">
@@ -44,7 +46,7 @@ class Sidebar extends Component {
                   <div 
                     onMouseEnter={ () => this.changeNavImage('imgHome', Icon_home_active) }
                     onMouseLeave={ () => this.changeNavImage('imgHome', Icon_home ) }
-                    className="nav-title">Home</div>
+                    className="nav-title"><Link to="/">Home</Link></div>
                 </div>
                 <div className="nav-item pb-3">
                   <div className="nav-icon--holder">
@@ -53,7 +55,7 @@ class Sidebar extends Component {
                   <div
                     onMouseEnter={ () => this.changeNavImage('imgWorks', Icon_work_active) }
                     onMouseLeave={ () => this.changeNavImage('imgWorks', Icon_work ) }
-                    className="nav-title">My Works
+                    className="nav-title"><Link to="/my_works">My Works</Link>
                   </div>
                 </div>
                 <div className="nav-item pb-3">
@@ -72,6 +74,7 @@ class Sidebar extends Component {
                   <div className="nav-title">Contact Me</div>
                 </div>
               </div>
+              
 
             </div>
           </AutoAffix>

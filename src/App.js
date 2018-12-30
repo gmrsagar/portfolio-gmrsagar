@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import { Row, Col } from 'react-bootstrap';
 
 // Illustrations
 import hero_illustration from './img/hero-illustration.svg';
 
 // Style 
+=======
+import { Route } from 'react-router-dom';
+//style
+>>>>>>> 2c27359268cb61f7bf47b9e00e7ff98a8dedc153
 import './.App.sass';
 
 // Components
@@ -24,7 +29,9 @@ class App extends Component {
             <Sidebar/>
           </div>
           <div className="col-10">
-            <Frontpage />
+            <Route exact path="/" component={Frontpage}></Route>
+            <Route path="/my_works" component={Work}></Route>
+            {/* <Frontpage /> */}
           </div>
         </div>
 
@@ -36,16 +43,15 @@ class App extends Component {
 
 
 
-      
-            <div className="sep-large"></div>
+
+        <div className="sep-large"></div>
       </div> {/* container-fluid ends */}
-      
+
 
 
     <footer className="fixed-bottom">
       links
     </footer>
-
     </div>
     );
   }
