@@ -12,8 +12,9 @@ import './.App.sass';
 import Sidebar from './components/Sidebar';
 import Frontpage from './components/Frontpage';
 import Work from './components/Work';
+import About from './components/About';
 import Contact from './components/Contact';
-
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -30,24 +31,13 @@ class App extends Component {
             {/* <Frontpage /> */}
           </div>
         </div>
-
-
-
           {/* Add new components here *************************************** */}
             <Work/>
             <Contact/>
 
-
-
-
         <div className="sep-large"></div>
       </div> {/* container-fluid ends */}
-
-
-
-    <footer className="fixed-bottom">
-      links
-    </footer>
+      <Footer/>
     </div>
     );
   }
