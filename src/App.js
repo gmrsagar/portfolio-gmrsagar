@@ -27,12 +27,13 @@ class App extends Component {
           </div>
           <div className="col-10">
             <Route exact path="/" component={Frontpage}></Route>
-            <Route path="/my_works" component={Work}></Route>
+            <Route path="/works" component={Work}></Route>
             {/* <Frontpage /> */}
           </div>
         </div>
           {/* Add new components here *************************************** */}
             <Work/>
+            <About/>
             <Contact/>
 
         <div className="sep-large"></div>
