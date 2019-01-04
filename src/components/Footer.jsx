@@ -4,7 +4,9 @@ class Footer extends Component {
     render() {
         return(
             <footer className="fixed-bottom">
-                links
+                <div className="float-right">
+                    Copyright © 2018, Sagar Ghimire
+                </div>
             </footer>
         );
     }

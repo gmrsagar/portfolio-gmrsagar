@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AutoAffix } from 'react-overlays'
+import { AutoAffix } from 'react-overlays';
 import { Link } from "react-router-dom";
 
 // sidebar-icons

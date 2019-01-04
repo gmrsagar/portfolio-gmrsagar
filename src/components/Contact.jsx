@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
+import hero_illustration from '../img/hero-illustration.svg';
+
+var heroBackgroundStyle = {
+    backgroundSize: '44%',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'right top 3rem',
+    backgroundImage: "url(" + hero_illustration +")"
+  };
+
 
 class Contact extends Component {
     render() {
         return(
-            <div className="row">
+            <div className="row" style = {heroBackgroundStyle}>
 				<div className="offset-2"></div>
 				<div className="col-10">
 					<div className="row">
@@ -13,7 +22,7 @@ class Contact extends Component {
                                 <p className="description-text">
                                 Looking to work together? Just say hi or tell me a bit about  your project and I'll get back to you. 
                                 </p>
-                                <div className="sep-medium"></div>
+                                <div className="sep-small"></div>
 
                                 <form className="contact-form">
                                     <label class="message" htmlFor="message-input">Your Message</label>
