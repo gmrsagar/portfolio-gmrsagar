@@ -1,6 +1,30 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class Contact extends Component {
+
+    state = {
+        name: '',
+        message: '',
+        email: '',
+        sent: false
+    }
+
+    formSubmit = (e) => {
+        e.preventDefault()
+        axios.post('https://portfolio-api.herokuapp.com', {
+            name: this.state.name,
+            email: this.state.email,
+            message: this.state.message
+        })
+        .then( res => {
+            this.setState({ sent: true })
+        })
+        .catch( () => {
+            
+        })
+    }
+
     render() {
         return(
             <div className="row">
@@ -15,21 +39,26 @@ class Contact extends Component {
                                 </p>
                                 <div className="sep-medium"></div>
 
-                                <form className="contact-form">
+                                <form className="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
                                     <label class="message" htmlFor="message-input">Your Message</label>
-                                    <textarea class="message-input" type="text" placeholder="Please write your message here"/>
+                                    <textarea onChange={e => this.setState({ message: e.target.value})} name="message" class="message-input" type="text" placeholder="Please write your message here" value={this.state.message}/>
                                     <div className="sep-small"></div>
 
                                     <label class="message-name" htmlFor="message-name">Your Name</label>
-                                    <input class="message-name" type="text" placeholder="Your Name"/>
+                                    <input onChange={e => this.setState({ name: e.target.value})} name="name" class="message-name" type="text" placeholder="Your Name" value={this.state.name}/>
                                     <div className="sep-small"></div>
 
                                     <label class="message-email" htmlFor="message-email">Your Email</label>
-                                    <input class="message-email" type="email" placeholder="your@email.com"/>
+                                    <input onChange={(e) => this.setState({ email: e.target.value})} name="email" class="message-email" type="email" placeholder="your@email.com" value={this.state.email}/>
                                     <div className="sep-medium"></div>
 
                                     <div className="button--container">
-                                        <div className="button button-primary">Send Message</div>
+                                        { (!this.state.sent)
+                                        ? 
+                                        <button type="submit" className="button button-primary">Send Message</button>
+                                        :
+                                        <button className="button button-disabled">Message Sent</button>
+                                        }
                                     </div>
 
                                 </form>
