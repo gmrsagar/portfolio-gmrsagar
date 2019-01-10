@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
+
 // Illustrations
 // import hero_illustration from './img/hero-illustration.svg';
 
 // Style
-import './.App.sass';
+import './.App.scss';
 
 // Components
 import Sidebar from './components/Sidebar';
