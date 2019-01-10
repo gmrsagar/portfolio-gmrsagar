@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 
 var heroBackgroundStyle = {
-    backgroundSize: '40%',
+    backgroundSize: '44%',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'right 1rem bottom 1rem',
+    backgroundPosition: 'right bottom 1rem',
     backgroundImage: "url(" + hero_illustration +")"
   };
 
@@ -21,7 +21,7 @@ class Frontpage extends Component{
                 <h1>Hello World, <br/> I am Sagar Ghimire.</h1>
                 <div className="code-text"> &lt; /h1 &gt;</div>
                 <p className="description-text">
-                  I am a Web Developer and I help businesses build digital solutions using JavaScript, php and more..
+                  I am a Web Developer and who helps businesses build digital solutions using JavaScript, php and more..
                 </p>
               </div>
             </div>

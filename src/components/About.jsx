@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import hero_illustration from '../img/hero-illustration.svg';
+import hero_illustration from '../img/hero-illustration3.svg';
 
 var heroBackgroundStyle = {
-    backgroundSize: '44%',
+    backgroundSize: '26%',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'right top 3rem',
+    backgroundPosition: 'right 3rem top 8rem',
     backgroundImage: "url(" + hero_illustration +")"
   };
 class About extends Component {
@@ -21,7 +21,8 @@ class About extends Component {
                                     I am a Web Developer who helps businesses build digital solutions using JavaScript, php and more.
                                     <div className="sep-small"></div>
                                     <span>
-                                    When I am not doing that, I love playing the guitar and sometimes indulge myself in PC games. One thing I love about working in tech is that learning never stops.
+                                    One thing I love about working in tech is that learning never stops. 
+                                    When I am not coding or learning, I love to play the guitar and also indulge myself in PC games. 
                                     </span>
                                 </p>
                                 <div className="sep-large"></div>

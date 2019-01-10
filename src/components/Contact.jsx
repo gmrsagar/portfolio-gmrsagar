@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import hero_illustration from '../img/hero-illustration.svg';
+import hero_illustration from '../img/hero-illustration2.svg';
 
 var heroBackgroundStyle = {
-    backgroundSize: '44%',
+    backgroundSize: '34%',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'right top 3rem',
+    backgroundPosition: 'right bottom 3rem',
     backgroundImage: "url(" + hero_illustration +")"
   };
 
@@ -20,7 +20,7 @@ class Contact extends Component {
                             <div className="main-section">
                                 <h1>Contact Me</h1>
                                 <p className="description-text">
-                                Looking to work together? Just say hi or tell me a bit about  your project and I'll get back to you. 
+                                Just say hi at <strong>gmrsagar@gmail.com</strong> or write me a message below and I'll get back to you as soon as I can. 
                                 </p>
                                 <div className="sep-small"></div>
 

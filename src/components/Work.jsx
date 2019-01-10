@@ -29,7 +29,7 @@ class Work extends Component {
 					<div className="main-section">
 						<h1>My Works</h1>
 						<p className="description-text">
-								Some of the projects that I work on when I am  <br/> not working on the rest of my projects
+							Some of the projects that I work on when I am  <br/> not working on the rest of my projects
 						</p>
 						<div className="project-card--holder mt-4">
 							<div className="row no-gutters">

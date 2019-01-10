@@ -32,59 +32,56 @@ class Sidebar extends Component {
     render() {
         return (
             <AutoAffix>
-                      <div className="sidebar pl-5 pt-4">
-              <div className="App-logo">SG</div>
-              {/*
-                * Navigation
-                */}
-              <div className="nav">
-                <div className="nav-item pb-3 active">
-                  <div className="nav-icon--holder">
-                  <img src={ this.state.navImages.imgHome }  alt="Home" className="nav-icon"/>
-                  </div>
+              <div className="sidebar pl-5 pt-4">
+                <div className="App-logo">SG</div>
+                {/*
+                  * Navigation
+                  */}
+                <div className="nav">
+                  <div className="nav-item pb-3 active">
                   <Link to="/"
-                    onMouseEnter={ () => this.changeNavImage('imgHome', Icon_home_active) }
-                    onMouseLeave={ () => this.changeNavImage('imgHome', Icon_home ) }
-                    className="nav-title">Home
-                  </Link>
-                </div>
-                <div className="nav-item pb-3">
-                  <div className="nav-icon--holder">
-                  <img src={ this.state.navImages.imgWorks } alt="" className="nav-icon"/>
+                      onMouseEnter={ () => this.changeNavImage('imgHome', Icon_home_active) }
+                      onMouseLeave={ () => this.changeNavImage('imgHome', Icon_home ) }>
+                    <div className="nav-icon--holder">
+                    <img src={ this.state.navImages.imgHome }  alt="Home" className="nav-icon"/>
+                    </div>
+                      <div className="nav-title">Home</div>
+                    </Link>
                   </div>
-                  <Link to="/works"
-                    onMouseEnter={ () => this.changeNavImage('imgWorks', Icon_work_active) }
-                    onMouseLeave={ () => this.changeNavImage('imgWorks', Icon_work ) }
-                    className="nav-title">My Works
-                  </Link>
-                </div>
-                <div className="nav-item pb-3">
-                  <div className="nav-icon--holder">
-                  <img src={ this.state.navImages.imgAbout }  alt="" className="nav-icon"/>
+                  <div className="nav-item pb-3">
+                    <Link to="/works"
+                      onMouseEnter={ () => this.changeNavImage('imgWorks', Icon_work_active) }
+                      onMouseLeave={ () => this.changeNavImage('imgWorks', Icon_work ) }>
+                      <div className="nav-icon--holder">
+                      <img src={ this.state.navImages.imgWorks } alt="" className="nav-icon"/>
+                    </div>
+                      <div className="nav-title">My Works</div>
+                    </Link>
                   </div>
-                  <Link to="/" 
-                    onMouseEnter={ () => this.changeNavImage('imgAbout', Icon_about_active) }
-                    onMouseLeave={ () => this.changeNavImage('imgAbout', Icon_about ) }
-                    className="nav-title">About Me
-                  </Link>
-                </div>
-                <div className="nav-item pb-3">
-                  <div className="nav-icon--holder">
-                  <img src={ this.state.navImages.imgContact }  alt="" className="nav-icon"/>
+                  <div className="nav-item pb-3">
+                    <Link to="/"
+                      onMouseEnter={ () => this.changeNavImage('imgAbout', Icon_about_active) }
+                      onMouseLeave={ () => this.changeNavImage('imgAbout', Icon_about ) }>
+                      <div className="nav-icon--holder">
+                        <img src={ this.state.navImages.imgAbout }  alt="" className="nav-icon"/>
+                      </div>
+                      <div className="nav-title">About Me</div>
+                    </Link>
                   </div>
-                  <Link to="/" 
-                    onMouseEnter={ () => this.changeNavImage('imgContact', Icon_contact_active) }
-                    onMouseLeave={ () => this.changeNavImage('imgContact', Icon_contact ) }
-                    className="nav-title">Contact Me
-                  </Link>
-                </div>
-              </div>
-              
 
+                  <div className="nav-item pb-3">
+                    <Link to="/" d
+                      onMouseEnter={ () => this.changeNavImage('imgContact', Icon_contact_active) }
+                      onMouseLeave={ () => this.changeNavImage('imgContact', Icon_contact ) }>
+                    <div className="nav-icon--holder">
+                    <img src={ this.state.navImages.imgContact }  alt="" className="nav-icon"/>
+                    </div>
+                      <div className="nav-title">Contact Me </div>
+                    </Link>
+                  </div>
+                </div>
             </div>
           </AutoAffix>
-
-          
         );
     }
 }
