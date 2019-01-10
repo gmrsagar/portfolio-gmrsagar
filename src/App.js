@@ -22,10 +22,10 @@ class App extends Component {
     <div className="App">
       <div className="container-fluid p-0">
         <div className="row">
-          <div className="col-2">
+          <div className="d-none d-sm-none d-md-block col-2">
             <Sidebar/>
           </div>
-          <div className="col-10">
+          <div className="col-sm-11 col-md-10">
             <Route exact path="/" component={Frontpage}></Route>
             <Route path="/works" component={Work}></Route>
             {/* <Frontpage /> */}

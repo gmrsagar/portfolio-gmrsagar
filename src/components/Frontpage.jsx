@@ -16,12 +16,12 @@ class Frontpage extends Component{
         return(
             <div className="main-section front-page" style = {heroBackgroundStyle}>
             <div className="row">
-              <div className="col-md-7 col-sm-10">
+              <div className="col-md-7 col-sm-12">
                 <div className="code-text"> &lt; h1 &gt;</div>
                 <h1>Hello World, <br/> I am Sagar Ghimire.</h1>
                 <div className="code-text"> &lt; /h1 &gt;</div>
                 <p className="description-text">
-                  I am a Web Developer and who helps businesses build digital solutions using JavaScript, php and more..
+                  I am a Web Developer who helps businesses build digital solutions using JavaScript, php and more..
                 </p>
               </div>
             </div>
