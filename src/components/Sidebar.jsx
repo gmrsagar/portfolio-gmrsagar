@@ -7,9 +7,9 @@ import Icon_home_active from '../img/home_active.svg';
 import Icon_home from '../img/home.svg';
 import Icon_work_active from '../img/work_active.svg';
 import Icon_work from '../img/work.svg';
-import Icon_about_active from '../img/about_active.svg';
+// import Icon_about_active from '../img/about_active.svg';
 import Icon_about from '../img/about.svg';
-import Icon_contact_active from '../img/contact_active.svg';
+// import Icon_contact_active from '../img/contact_active.svg';
 import Icon_contact from '../img/contact.svg';
 
 class Sidebar extends Component {

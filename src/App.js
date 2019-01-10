@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'react-bootstrap';
 import { Route } from 'react-router-dom';
 
 // Illustrations
-import hero_illustration from './img/hero-illustration.svg';
+// import hero_illustration from './img/hero-illustration.svg';
 
 // Style
 import './.App.sass';

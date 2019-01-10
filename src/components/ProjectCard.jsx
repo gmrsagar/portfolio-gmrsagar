@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Chordpro_image from '../img/demo.png';
 
 class ProjectCard extends Component {
     render() {
