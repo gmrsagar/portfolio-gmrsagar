@@ -20,8 +20,8 @@ class Contact extends Component {
         .then( res => {
             this.setState({ sent: true })
         })
-        .catch( () => {
-            
+        .catch( (err) => {
+            console.log(err)
         })
     }
 
