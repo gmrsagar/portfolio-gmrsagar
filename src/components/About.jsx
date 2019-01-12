@@ -15,7 +15,7 @@ class About extends Component {
 				<div className="col-sm-11 col-md-10">
 					<div className="row">
                         <div className="col-sm-12 col-md-9 col-lg-7">
-                            <div className="main-section">
+                            <div className="main-section" id="about">
                                 <h1>About Me</h1>
                                 <p className="description-text">
                                     I am a Web Developer who helps businesses build digital solutions using JavaScript, php and more.

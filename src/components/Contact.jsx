@@ -17,7 +17,7 @@ class Contact extends Component {
 				<div className="col-sm-11 col-md-10">
 					<div className="row">
                         <div className="col-sm-12 col-md-9 col-lg-7">
-                            <div className="main-section">
+                            <div className="main-section" id="contact">
                                 <h1>Contact Me</h1>
                                 <p className="description-text">
                                 Just say hi at <strong>gmrsagar@gmail.com</strong> or write me a message below and I'll get back to you as soon as I can. 

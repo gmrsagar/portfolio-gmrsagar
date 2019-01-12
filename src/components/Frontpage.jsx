@@ -14,7 +14,7 @@ var heroBackgroundStyle = {
 class Frontpage extends Component{
     render() {
         return(
-            <div className="main-section front-page" style = {heroBackgroundStyle}>
+            <div className="main-section front-page" id="home" style = {heroBackgroundStyle}>
             <div className="row">
               <div className="col-md-7 col-sm-12">
                 <div className="code-text"> &lt; h1 &gt;</div>
@@ -30,10 +30,10 @@ class Frontpage extends Component{
               <div className="col">
                 <div className="cta-buttons">
                     <div className="button--container">
-                        <Link to="#" className="button button-primary">Contact me</Link>
+                        <a href="#contact" className="button button-primary">Contact me</a>
                     </div>
                     <div className="button--container">
-                        <Link to="#" className="button button-secondary">Peek into my Projects</Link>
+                        <a href="#works" className="button button-secondary">Peek into my Projects</a>
                     </div>
                 </div>
               </div>

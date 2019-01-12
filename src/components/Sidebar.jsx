@@ -39,45 +39,55 @@ class Sidebar extends Component {
                   */}
                 <div className="nav">
                   <div className="nav-item pb-3 active">
-                  <Link to="/"
+                  <a href="#home"
                       onMouseEnter={ () => this.changeNavImage('imgHome', Icon_home_active) }
                       onMouseLeave={ () => this.changeNavImage('imgHome', Icon_home ) }>
                     <div className="nav-icon--holder">
                     <img src={ this.state.navImages.imgHome }  alt="Home" className="nav-icon"/>
                     </div>
                       <div className="nav-title">Home</div>
-                    </Link>
+                    </a>
                   </div>
                   <div className="nav-item pb-3">
-                    <Link to="/works"
+                    <a href="#works"
                       onMouseEnter={ () => this.changeNavImage('imgWorks', Icon_work_active) }
                       onMouseLeave={ () => this.changeNavImage('imgWorks', Icon_work ) }>
                       <div className="nav-icon--holder">
                       <img src={ this.state.navImages.imgWorks } alt="" className="nav-icon"/>
                     </div>
                       <div className="nav-title">My Works</div>
-                    </Link>
+                    </a>
                   </div>
                   <div className="nav-item pb-3">
-                    <Link to="/"
+                    <a href="#about"
                       onMouseEnter={ () => this.changeNavImage('imgAbout', Icon_about_active) }
                       onMouseLeave={ () => this.changeNavImage('imgAbout', Icon_about ) }>
                       <div className="nav-icon--holder">
                         <img src={ this.state.navImages.imgAbout }  alt="" className="nav-icon"/>
                       </div>
                       <div className="nav-title">About Me</div>
-                    </Link>
+                    </a>
                   </div>
 
                   <div className="nav-item pb-3">
-                    <Link to="/" d
+                    <a href="#contact"
                       onMouseEnter={ () => this.changeNavImage('imgContact', Icon_contact_active) }
                       onMouseLeave={ () => this.changeNavImage('imgContact', Icon_contact ) }>
                     <div className="nav-icon--holder">
                     <img src={ this.state.navImages.imgContact }  alt="" className="nav-icon"/>
                     </div>
                       <div className="nav-title">Contact Me </div>
-                    </Link>
+                    </a>
+                  </div>
+                  <div className="nav-item pb-3">
+                    <a href="#contact"
+                      onMouseEnter={ () => this.changeNavImage('imgContact', Icon_contact_active) }
+                      onMouseLeave={ () => this.changeNavImage('imgContact', Icon_contact ) }>
+                    <div className="nav-icon--holder">
+                    <img src={ this.state.navImages.imgContact }  alt="" className="nav-icon"/>
+                    </div>
+                      <div className="nav-title">Blog</div>
+                    </a>
                   </div>
                 </div>
             </div>
