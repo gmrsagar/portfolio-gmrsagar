@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import hero_illustration from '../img/hero-illustration3.svg';
 
 var heroBackgroundStyle = {
-    backgroundSize: '26%',
+    backgroundSize: '20%',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'right 3rem top 8rem',
+    backgroundPosition: 'right 6rem top 8rem',
     backgroundImage: "url(" + hero_illustration +")"
   };
 class About extends Component {
@@ -22,7 +22,7 @@ class About extends Component {
                                     <div className="sep-small"></div>
                                     <span>
                                     One thing I love about working in tech is that learning never stops. 
-                                    When I am not coding or learning, I love to play the guitar and also indulge myself in PC games. 
+                                    When I am not coding or learning, I love to play the guitar. 
                                     </span>
                                 </p>
                                 <div className="sep-large"></div>

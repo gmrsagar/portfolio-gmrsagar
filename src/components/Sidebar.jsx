@@ -79,7 +79,8 @@ class Sidebar extends Component {
                       <div className="nav-title">Contact Me </div>
                     </a>
                   </div>
-                  <div className="nav-item pb-3">
+                  {/* coming soon */}
+                  {/* <div className="nav-item pb-3">
                     <a href="#contact"
                       onMouseEnter={ () => this.changeNavImage('imgContact', Icon_contact_active) }
                       onMouseLeave={ () => this.changeNavImage('imgContact', Icon_contact ) }>
@@ -88,7 +89,7 @@ class Sidebar extends Component {
                     </div>
                       <div className="nav-title">Blog</div>
                     </a>
-                  </div>
+                  </div> */}
                 </div>
             </div>
           </AutoAffix>
