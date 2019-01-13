@@ -1,16 +1,8 @@
 import React, { Component } from 'react';
-import hero_illustration from '../img/hero-illustration3.svg';
-
-var heroBackgroundStyle = {
-    backgroundSize: '20%',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'right 6rem top 8rem',
-    backgroundImage: "url(" + hero_illustration +")"
-  };
 class About extends Component {
     render() {
         return(
-            <div className="row" style = {heroBackgroundStyle}>
+            <div className="row img-bg about-page">
 				<div className="offset-2 d-none d-sm-none d-md-block"></div>
 				<div className="col-sm-11 col-md-10">
 					<div className="row">

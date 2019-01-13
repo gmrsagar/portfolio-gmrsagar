@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { AutoAffix } from 'react-overlays';
-import { Link } from "react-router-dom";
 
 // sidebar-icons
 import Icon_home_active from '../img/home_active.svg';
