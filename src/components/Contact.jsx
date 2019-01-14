@@ -12,6 +12,7 @@ class Contact extends Component {
 
     formSubmit = (e) => {
         e.preventDefault()
+        axios.defaults.headers.post['Access-Control-Allow-Methods'] = 'PATCH, DELETE, POST, GET, OPTIONS';
         axios.post('https://portfolio-api.herokuapp.com', {
             name: this.state.name,
             email: this.state.email,
@@ -20,8 +21,8 @@ class Contact extends Component {
         .then( res => {
             this.setState({ sent: true })
         })
-        .catch( (err) => {
-            console.log(err)
+        .catch( () => {
+            
         })
     }
 
