@@ -24,7 +24,6 @@ class Contact extends Component {
             this.setState({ sent: true }, this.resetForm())
         })
         .catch( () => {
-            
         })
     }
 
@@ -39,16 +38,16 @@ class Contact extends Component {
     render() {
         return(
             <div className="row">
-				<div className="offset-2"></div>
-				<div className="col-10">
+				<div className="offset-2 d-none d-sm-none d-md-block"></div>
+				<div className="col-sm-11 col-md-10">
 					<div className="row">
                         <div className="col-sm-12 col-md-9 col-lg-7">
                             <div className="main-section">
                                 <h1>Contact Me</h1>
                                 <p className="description-text">
-                                Looking to work together? Just say hi or tell me a bit about  your project and I'll get back to you. 
+                                Just say hi at <strong>gmrsagar@gmail.com</strong> or write me a message below and I'll get back to you as soon as I can. 
                                 </p>
-                                <div className="sep-medium"></div>
+                                <div className="sep-small"></div>
 
                                 <form className="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
                                     <label class="message" htmlFor="message-input">Your Message</label>

@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import ProjectCard from '../components/ProjectCard';
-import WORKS from '../initProject.json'
+import WORKS from '../initProject.json';
+import hero_illustration from '../img/hero-illustration.svg';
+
+var heroBackgroundStyle = {
+    backgroundSize: '44%',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'right top 3rem',
+    backgroundImage: "url(" + hero_illustration +")"
+  };
 
 
 class Work extends Component {
@@ -15,13 +23,13 @@ class Work extends Component {
 
 	render() {
 		return(
-			<div className="row">
-				<div className="offset-2"></div>
-				<div className="col-10">
+			<div className="row"> {/* style = {heroBackgroundStyle} */}
+				<div className="offset-2 d-none d-sm-none d-md-block"></div>
+				<div className="col-sm-11 col-md-10">
 					<div className="main-section">
 						<h1>My Works</h1>
 						<p className="description-text">
-								Some of the projects that I work on when I am  <br/> not working on the rest of my projects
+							Some of the projects that I work on when I am  <br/> not working on the rest of my projects
 						</p>
 						<div className="project-card--holder mt-4">
 							<div className="row no-gutters">

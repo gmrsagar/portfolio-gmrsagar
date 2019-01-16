@@ -5,12 +5,12 @@ class ProjectCard extends Component {
         return(
             <div className="project-card">
                 <div className="row no-gutters">
-                <div className="col-4">
+                <div className="col-sm-12 col-md-4">
                     <div className="project-card-image--holder">
                         <img src={ this.props.work.img } class="project-card-image" alt=""/>
                     </div>
                 </div>
-                <div className="col-8">
+                <div className="col-sm-12 col-md-8">
                     <div className="project-card-info">
                         <div className="project-card-title">
                             { this.props.work.name }

@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import { AutoAffix } from 'react-overlays'
-import { Link } from "react-router-dom";
+import { AutoAffix } from 'react-overlays';
 
 // sidebar-icons
 import Icon_home_active from '../img/home_active.svg';
 import Icon_home from '../img/home.svg';
 import Icon_work_active from '../img/work_active.svg';
 import Icon_work from '../img/work.svg';
-// import Icon_about_active from '../img/about_active.svg';
+import Icon_about_active from '../img/about_active.svg';
 import Icon_about from '../img/about.svg';
-// import Icon_contact_active from '../img/contact_active.svg';
+import Icon_contact_active from '../img/contact_active.svg';
 import Icon_contact from '../img/contact.svg';
 
 class Sidebar extends Component {
@@ -32,54 +31,67 @@ class Sidebar extends Component {
     render() {
         return (
             <AutoAffix>
-                      <div className="sidebar pl-5 pt-4">
-              <div className="App-logo">SG</div>
-              {/*
-                * Navigation
-                */}
-                
-              <div className="nav">
-                <div className="nav-item pb-3 active">
-                  <div className="nav-icon--holder">
-                  <img src={ this.state.navImages.imgHome }  alt="Home" className="nav-icon"/>
+              <div className="sidebar pl-5 pt-4 d-none d-sm-none d-md-none d-lg-block">
+                <div className="App-logo">SG</div>
+                {/*
+                  * Navigation
+                  */}
+                <div className="nav">
+                  <div className="nav-item pb-3 active">
+                  <a href="#home"
+                      onMouseEnter={ () => this.changeNavImage('imgHome', Icon_home_active) }
+                      onMouseLeave={ () => this.changeNavImage('imgHome', Icon_home ) }>
+                    <div className="nav-icon--holder">
+                    <img src={ this.state.navImages.imgHome }  alt="Home" className="nav-icon"/>
+                    </div>
+                      <div className="nav-title">Home</div>
+                    </a>
                   </div>
-                  <div 
-                    onMouseEnter={ () => this.changeNavImage('imgHome', Icon_home_active) }
-                    onMouseLeave={ () => this.changeNavImage('imgHome', Icon_home ) }
-                    className="nav-title"><Link to="/">Home</Link></div>
-                </div>
-                <div className="nav-item pb-3">
-                  <div className="nav-icon--holder">
-                  <img src={ this.state.navImages.imgWorks } alt="" className="nav-icon"/>
+                  <div className="nav-item pb-3">
+                    <a href="#works"
+                      onMouseEnter={ () => this.changeNavImage('imgWorks', Icon_work_active) }
+                      onMouseLeave={ () => this.changeNavImage('imgWorks', Icon_work ) }>
+                      <div className="nav-icon--holder">
+                      <img src={ this.state.navImages.imgWorks } alt="" className="nav-icon"/>
+                    </div>
+                      <div className="nav-title">My Works</div>
+                    </a>
                   </div>
-                  <div
-                    onMouseEnter={ () => this.changeNavImage('imgWorks', Icon_work_active) }
-                    onMouseLeave={ () => this.changeNavImage('imgWorks', Icon_work ) }
-                    className="nav-title"><Link to="/my_works">My Works</Link>
+                  <div className="nav-item pb-3">
+                    <a href="#about"
+                      onMouseEnter={ () => this.changeNavImage('imgAbout', Icon_about_active) }
+                      onMouseLeave={ () => this.changeNavImage('imgAbout', Icon_about ) }>
+                      <div className="nav-icon--holder">
+                        <img src={ this.state.navImages.imgAbout }  alt="" className="nav-icon"/>
+                      </div>
+                      <div className="nav-title">About Me</div>
+                    </a>
                   </div>
-                </div>
-                <div className="nav-item pb-3">
-                  <div className="nav-icon--holder">
-                  <img src={ this.state.navImages.imgAbout }  alt="" className="nav-icon"/>
-                  </div>
-                  <div 
-                    onMouseEnter={ () => this.changeNavImage('imgWork', Icon_work_active) }
-                    onMouseLeave={ () => this.changeNavImage('imgWork', Icon_work ) }
-                    className="nav-title">About Me</div>
-                </div>
-                <div className="nav-item pb-3">
-                  <div className="nav-icon--holder">
-                  <img src={ Icon_contact } alt="" className="nav-icon"/>
-                  </div>
-                  <div className="nav-title">Contact Me</div>
-                </div>
-              </div>
-              
 
+                  <div className="nav-item pb-3">
+                    <a href="#contact"
+                      onMouseEnter={ () => this.changeNavImage('imgContact', Icon_contact_active) }
+                      onMouseLeave={ () => this.changeNavImage('imgContact', Icon_contact ) }>
+                    <div className="nav-icon--holder">
+                    <img src={ this.state.navImages.imgContact }  alt="" className="nav-icon"/>
+                    </div>
+                      <div className="nav-title">Contact Me </div>
+                    </a>
+                  </div>
+                  {/* coming soon */}
+                  {/* <div className="nav-item pb-3">
+                    <a href="#contact"
+                      onMouseEnter={ () => this.changeNavImage('imgContact', Icon_contact_active) }
+                      onMouseLeave={ () => this.changeNavImage('imgContact', Icon_contact ) }>
+                    <div className="nav-icon--holder">
+                    <img src={ this.state.navImages.imgContact }  alt="" className="nav-icon"/>
+                    </div>
+                      <div className="nav-title">Blog</div>
+                    </a>
+                  </div> */}
+                </div>
             </div>
           </AutoAffix>
-
-          
         );
     }
 }
