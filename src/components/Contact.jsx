@@ -7,11 +7,16 @@ class Contact extends Component {
         name: '',
         message: '',
         email: '',
-        sent: false
+        sent: false,
+        buttonText: 'Send Message'
     }
 
     formSubmit = (e) => {
         e.preventDefault()
+
+        this.setState({
+            buttonText: '...sending'
+        })
 
         let data = {
             name: this.state.name,
@@ -50,7 +55,7 @@ class Contact extends Component {
 
                                 <form className="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
                                     <label class="message" htmlFor="message-input">Your Message</label>
-                                    <textarea onChange={e => this.setState({ message: e.target.value})} name="message" class="message-input" type="text" placeholder="Please write your message here" value={this.state.message}/>
+                                    <textarea onChange={e => this.setState({ message: e.target.value})} name="message" class="message-input" type="text" placeholder="Please write your message here" value={this.state.message} required/>
                                     <div className="sep-small"></div>
 
                                     <label class="message-name" htmlFor="message-name">Your Name</label>
@@ -58,13 +63,13 @@ class Contact extends Component {
                                     <div className="sep-small"></div>
 
                                     <label class="message-email" htmlFor="message-email">Your Email</label>
-                                    <input onChange={(e) => this.setState({ email: e.target.value})} name="email" class="message-email" type="email" placeholder="your@email.com" value={this.state.email}/>
+                                    <input onChange={(e) => this.setState({ email: e.target.value})} name="email" class="message-email" type="email" placeholder="your@email.com" required value={this.state.email} />
                                     <div className="sep-medium"></div>
 
                                     <div className="button--container">
                                         { (!this.state.sent)
                                         ?
-                                        <button type="submit" className="button button-primary">Send Message</button>
+                                        <button type="submit" className="button button-primary">{this.state.buttonText}</button>
                                         :
                                         <button className="button button-disabled">Message Sent</button>
                                         }

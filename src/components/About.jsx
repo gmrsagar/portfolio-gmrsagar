@@ -10,10 +10,10 @@ class About extends Component {
                             <div className="main-section" id="about">
                                 <h1>About Me</h1>
                                 <p className="description-text">
-                                    I am a Web Developer who helps businesses build digital solutions using JavaScript, php and more.
+                                a software engineer with 2+ years of experience in full stack web development. I help businesses build digital solutions using PHP, JavaScript (React.js) and  MySQL.
                                     <div className="sep-small"></div>
                                     <span>
-                                    One thing I love about working in tech is that learning never stops. 
+                                    I am passionate about building prolific and scalable products that are valuable to the users. 
                                     When I am not coding or learning, I love to play the guitar. 
                                     </span>
                                 </p>
@@ -43,32 +43,44 @@ class About extends Component {
                                     <div className="sep-small"></div>
                                         <span>
                                         <strong>Web Developer</strong>
-                                        <span><strong><a href="https://www.growcept.com" target="_blank">Growcept Pvt. Ltd</a></strong>, Kathmandu, Nepal - April 2017 - June 2018</span>
+                                        <span><strong><a class="company-url" href="https://www.growcept.com" target="_blank">Growcept Pvt. Ltd</a></strong>, Kathmandu, Nepal | April 2017 - June 2018</span>
                                         <div className="sep-small"></div>
                                             Responsibilities:
                                             <ul>
-                                                <li>Developed a back-end system for an established news portal using PHP/ MySQL, JavaScript and jQuery.</li>
-                                                <li>Developed an International Forum with voting interface implemented using AJAX, JSON, XML, PHP and JavaScript.</li>
-                                                <li>Built e-commerce themes and templates using WordPress and Woo- commerce.</li>
-                                                <li>Build a music library system using Node.js, Express js, MongoDB, Vue.js, PHP, REST.</li>
-                                                <li>Managed multiple teams in development and debugging of corporate themes built using WordPress.</li>
-                                                <li>Developed musical chord generator system using React.js and EcmaScript 6.</li>
-                                                <li>Built a calendar and event creation system using React.js</li>
+                                            <li>Developed and customized WordPress themes for <a class="work-url" href="https://www.themethread.com">Growcept’s marketplace</a> and <a class="work-url" href="https://wordpress.org/themes/author/themethread/">WordPress.org.</a></li>
+                                            <li>Rebuilt ecommerce portals using WooCommerce which increased theme development and performance efficiency by 30%.</li>
+                                            <li>Standardized theme development process which cut down rework by at least 20% and improved scalability.</li>
+                                            <li>Improved user experience for a national sports website <a class="work-url" href="https://www.wicketnepal.com/">(WicketNepal)</a> by implementing live commentary system for ongoing matches.</li>
+                                            <li>Worked on training programs for interns to help with setting up tools, docker environments, Linux environments, git, web services and assisting development of WordPress themes.</li>
+
                                             </ul>
                                         </span>
                                         <div className="sep-medium"></div>
                                         <span>
-                                        <strong>Back-End Developer (March 2016 - March 2017)</strong>
-                                        <span><strong><a href="https://www.intellisoftnepal.com/web/" target="_blank">Intellisoft Nepal</a></strong>, Kathmandu, Nepal - intellisoftnepal.com</span>
+                                        <strong>Back-End Developer</strong>
+                                        <span><strong><a class="company-url" href="https://www.intellisoftnepal.com/web/" target="_blank">Intellisoft Nepal</a></strong>, Kathmandu, Nepal | March 2016 - March 2017</span>
                                         <div className="sep-small"></div>
                                                 Responsibilities:
                                                 <ul>
-                                                    <li>Architected and built from scratch an Intranet based daily management system to automate manual tasks using Bootstrap, PHP/MySQL, REST, JavaScript, jQuery </li>
-                                                    <li>Developed a calendar and notification interface for an existing enterprise system. Analyzed and resolved issues related to enterprise software products</li>
+                                                    <li>Developed and maintained of software products written in PHP and JavaScript utilizing fundamental OOP principles for enterprise and government organizations.</li>
+                                                    <li>Initiated, architected and coded office management system to automate internal tasks which made employee management more efficient by 40%.</li>
+                                                    <li>Communicated with clients from project discovery to support phase of the project lifecycle.</li>
+                                                    <li>Improved performance and reduced cost on application servers by implementing server offloading to storage solutions like Amazon Web Services S3.</li>
+                                                    <li>Applied Agile sprint based development model for releasing new features and fixes for retaining customers.</li>
+                                                </ul>
+                                        </span>
+                                        <div className="sep-medium"></div>
+                                        <span>
+                                        <strong>Consultation and Side Projects</strong>
+                                        <div className="sep-small"></div>
+                                                <ul>
+                                                    <li>Developed a musical chord progression generating <a class="work-url" href="https://github.com/gmrsagar/chord-pro">app</a> using React.js.</li>
+                                                    <li>Contributed in developing and maintaining <a class="work-url" href="https://github.com/geshan/acpwvs-api"> Node.js REST API </a>for a list of tech(ish) companies in Australia providing work visa that updates content into Airtable utilizing Continuous Deployment on Heroku.</li>
                                                 </ul>
                                         </span>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>

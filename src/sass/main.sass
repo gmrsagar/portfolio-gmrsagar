@@ -84,6 +84,14 @@ h1
             color: $secondary-color
             box-shadow: 10px 10px 0 $secondary-color
 
+    &-disabled
+        border: none
+
+        &:hover
+            box-shadow: 0px 0px 0 $white
+            background-color: $light-grey
+
+
 footer
     padding: 0.1rem
     font-size: $small-text/1.1
@@ -95,3 +103,15 @@ footer
         li
             padding-top: 0.4rem
 
+.work-url
+    color: $darker-grey
+    text-decoration: underline
+
+    &:hover
+        color: $primary-color
+        transition: all 0.5s ease
+
+.company-url
+    &:hover
+        color: $primary-color
+        transition: all 0.5s ease
