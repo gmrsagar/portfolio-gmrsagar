@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group-9" transform="translate(5.000000, 2.000000)" stroke="#333161" stroke-width="1.4">
+            <polyline id="Stroke-1" points="8.4824 18.8042622 3.61632593 21.6232351 3.61632593 13.8935054 10.5446222 2.15026216 15.9330667 6.75837027 15.9330667 14.4881 12.8447704 16.2772351"></polyline>
+            <polygon id="Stroke-3" points="3.61635556 13.8936243 5.92592593e-05 11.0829757 0.152355556 18.4274081 3.61635556 21.6233541"></polygon>
+            <path d="M8.4824,19.8461784 L8.4824,13.1569892 C8.4824,11.7614757 9.45899259,10.0645027 10.663437,9.36644865 C11.8681778,8.66869189 12.8447704,9.23444865 12.8447704,10.6299622 L12.8447704,17.3191514 L8.4824,19.8461784 Z" id="Stroke-5"></path>
+            <polygon id="Stroke-7" fill="#44E291" points="3.61635556 13.8936243 5.92592593e-05 11.0829757 6.58998519 2.97297297e-05 10.5683556 2.19111081"></polygon>
+        </g>
+    </g>
+</svg>
