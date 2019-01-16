@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
 
 
 // Illustrations
@@ -26,9 +25,7 @@ class App extends Component {
             <Sidebar/>
           </div>
           <div className="col-sm-11 col-md-12 col-lg-10">
-            <Route exact path="/" component={Frontpage}></Route>
-            <Route path="/works" component={Work}></Route>
-            {/* <Frontpage /> */}
+            <Frontpage />
           </div>
         </div>
           {/* Add new components here *************************************** */}
