@@ -31,7 +31,7 @@ class Sidebar extends Component {
     render() {
         return (
             <AutoAffix>
-              <div className="sidebar pl-5 pt-4 d-none d-sm-none d-md-block">
+              <div className="sidebar pl-5 pt-4 d-none d-sm-none d-md-none d-lg-block">
                 <div className="App-logo">SG</div>
                 {/*
                   * Navigation

@@ -3,8 +3,8 @@ class Contact extends Component {
     render() {
         return(
             <div className="row img-bg contact-page">
-				<div className="offset-2 d-none d-sm-none d-md-block"></div>
-				<div className="col-sm-11 col-md-10">
+				<div className="offset-2 d-none d-sm-none d-md-none d-lg-block"></div>
+				<div className="col-sm-11 col-md-12 col-lg-10">
 					<div className="row">
                         <div className="col-sm-12 col-md-9 col-lg-7">
                             <div className="main-section" id="contact">

@@ -5,16 +5,19 @@
     .description-text
         font-size: 0.8*$description-text
 
-    .cta-buttons
-        .button-secondary
-            margin-top: 1rem
-
     .work-section
         ul
             padding-left: 1rem
+
+    .img-bg
+        background-image: none !important //remove background from all specificity levels in small device
 
 @media (max-width: 576px)
     .contact-form
         input, textarea
             display: block
             width: 90%
+            
+    .cta-buttons
+        .button-secondary
+            margin-top: 1rem
