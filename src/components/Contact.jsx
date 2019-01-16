@@ -21,10 +21,18 @@ class Contact extends Component {
         
         axios.post('https://nodejs-express-r5t89d8xx.now.sh/api/v1', data)
         .then( res => {
-            this.setState({ sent: true })
+            this.setState({ sent: true }, this.resetForm())
         })
         .catch( () => {
             
+        })
+    }
+
+    resetForm = () => {
+        this.setState({
+            name: '',
+            message: '',
+            email: ''
         })
     }
 
