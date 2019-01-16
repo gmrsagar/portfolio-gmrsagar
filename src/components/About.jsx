@@ -24,13 +24,13 @@ class About extends Component {
                                     <div className="description-text">
                                     <div className="sep-small"></div>
                                         <span>
-                                            <strong>Back-end Technologies </strong>- PHP, Node.js, Laravel, Wordpress, Express.js 
+                                            PHP, Node.js, Laravel, Wordpress, Express.js
                                             <div className="sep-small"></div>
-                                            <strong>Front-end Technologies </strong>- React.js, Vue.js, jQuery, Bootstrap, HTML5, CSS3, JavaScript, ES6
+                                            JavaScript, React.js, ES6, jQuery, Bootstrap, HTML5, CSS3
                                             <div className="sep-small"></div>
-                                            <strong>Others </strong>- Git, Docker, Amazon Web Services, JSON, XML, AJAX, REST, MySQL, MongoDB
+                                            Git, Docker, Amazon Web Services, REST, MySQL, MongoDB
                                             <div className="sep-small"></div>
-                                            Familiar working with Linux, OSX and Windows based systems.
+                                            Command Line Interface, Linux, OSX and Windows environments,Microservices, OOP, CI, SOLID, Deployment, Unit Testing
                                         </span>
                                     </div>
                                 </div>
@@ -42,8 +42,8 @@ class About extends Component {
                                     <div className="description-text">
                                     <div className="sep-small"></div>
                                         <span>
-                                        <strong>Web Developer (April 2017 - June 2018)</strong>
-                                        <span>Growcept Pvt. Ltd, Kathmandu, Nepal - growcept.com</span>
+                                        <strong>Web Developer</strong>
+                                        <span><strong><a href="https://www.growcept.com" target="_blank">Growcept Pvt. Ltd</a></strong>, Kathmandu, Nepal - April 2017 - June 2018</span>
                                         <div className="sep-small"></div>
                                             Responsibilities:
                                             <ul>
@@ -59,7 +59,7 @@ class About extends Component {
                                         <div className="sep-medium"></div>
                                         <span>
                                         <strong>Back-End Developer (March 2016 - March 2017)</strong>
-                                        <span>Intellisoft Nepal, Kathmandu, Nepal - intellisoftnepal.com</span>
+                                        <span><strong><a href="https://www.intellisoftnepal.com/web/" target="_blank">Intellisoft Nepal</a></strong>, Kathmandu, Nepal - intellisoftnepal.com</span>
                                         <div className="sep-small"></div>
                                                 Responsibilities:
                                                 <ul>
