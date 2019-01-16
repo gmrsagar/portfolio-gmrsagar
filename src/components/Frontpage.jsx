@@ -1,20 +1,10 @@
 import React, { Component } from 'react';
-import hero_illustration from '../img/hero-illustration.svg';
 import Social from '../components/Social';
-import { Link } from "react-router-dom";
-
-
-var heroBackgroundStyle = {
-    backgroundSize: '44%',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'right bottom 1rem',
-    backgroundImage: "url(" + hero_illustration +")"
-  };
 
 class Frontpage extends Component{
     render() {
         return(
-            <div className="main-section front-page" style = {heroBackgroundStyle}>
+            <div className="main-section front-page img-bg" id="home">
             <div className="row">
               <div className="col-md-7 col-sm-12">
                 <div className="code-text"> &lt; h1 &gt;</div>
@@ -30,10 +20,10 @@ class Frontpage extends Component{
               <div className="col">
                 <div className="cta-buttons">
                     <div className="button--container">
-                        <Link to="#" className="button button-primary">Contact me</Link>
+                        <a href="#contact" className="button button-primary">Contact me</a>
                     </div>
                     <div className="button--container">
-                        <Link to="#" className="button button-secondary">Peek into my Projects</Link>
+                        <a href="#works" className="button button-secondary">Peek into my Projects</a>
                     </div>
                 </div>
               </div>

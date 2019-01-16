@@ -18,7 +18,6 @@ class Contact extends Component {
             email: this.state.email,
             message: this.state.message
         }
-        
         axios.post('https://nodejs-express-r5t89d8xx.now.sh/api/v1', data)
         .then( res => {
             this.setState({ sent: true }, this.resetForm())
@@ -37,15 +36,15 @@ class Contact extends Component {
 
     render() {
         return(
-            <div className="row">
-				<div className="offset-2 d-none d-sm-none d-md-block"></div>
-				<div className="col-sm-11 col-md-10">
+            <div className="row img-bg contact-page">
+				<div className="offset-2 d-none d-sm-none d-md-none d-lg-block"></div>
+				<div className="col-sm-11 col-md-12 col-lg-10">
 					<div className="row">
                         <div className="col-sm-12 col-md-9 col-lg-7">
-                            <div className="main-section">
+                            <div className="main-section" id="contact">
                                 <h1>Contact Me</h1>
                                 <p className="description-text">
-                                Just say hi at <strong>gmrsagar@gmail.com</strong> or write me a message below and I'll get back to you as soon as I can. 
+                                Just say hi at <strong>gmrsagar@gmail.com</strong> or write me a message below and I'll get back to you as soon as possible. 
                                 </p>
                                 <div className="sep-small"></div>
 
@@ -64,7 +63,7 @@ class Contact extends Component {
 
                                     <div className="button--container">
                                         { (!this.state.sent)
-                                        ? 
+                                        ?
                                         <button type="submit" className="button button-primary">Send Message</button>
                                         :
                                         <button className="button button-disabled">Message Sent</button>
