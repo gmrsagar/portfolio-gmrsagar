@@ -49,7 +49,7 @@ class Contact extends Component {
                             <div className="main-section" id="contact">
                                 <h1>Contact Me</h1>
                                 <p className="description-text">
-                                Just say hi at <strong>gmrsagar@gmail.com</strong> or write me a message below and I'll get back to you as soon as possible. 
+                                Just say hi at <strong>gmrsagar@gmail.com</strong> or leave me a message below and I'll get back to you as soon as possible. 
                                 </p>
                                 <div className="sep-small"></div>
 

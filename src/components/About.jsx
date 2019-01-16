@@ -10,7 +10,7 @@ class About extends Component {
                             <div className="main-section" id="about">
                                 <h1>About Me</h1>
                                 <p className="description-text">
-                                a software engineer with 2+ years of experience in full stack web development. I help businesses build digital solutions using PHP, JavaScript (React.js) and  MySQL.
+                                Hi, I'm Sagar, a software engineer with 2+ years of experience in full stack web development. I help businesses build digital solutions using PHP, JavaScript (React.js) and  MySQL.
                                     <div className="sep-small"></div>
                                     <span>
                                     I am passionate about building prolific and scalable products that are valuable to the users. 
@@ -48,10 +48,10 @@ class About extends Component {
                                             Responsibilities:
                                             <ul>
                                             <li>Developed and customized WordPress themes for <a class="work-url" href="https://www.themethread.com">Growcept’s marketplace</a> and <a class="work-url" href="https://wordpress.org/themes/author/themethread/">WordPress.org.</a></li>
-                                            <li>Rebuilt ecommerce portals using WooCommerce which increased theme development and performance efficiency by 30%.</li>
-                                            <li>Standardized theme development process which cut down rework by at least 20% and improved scalability.</li>
+                                            <li>Rebuilt ecommerce portals using WooCommerce which improved checkout flow efficiency by 30%.</li>
+                                            <li>Standardized theme development process which improved scalability and cut down rework by at least 20%.</li>
                                             <li>Improved user experience for a national sports website <a class="work-url" href="https://www.wicketnepal.com/">(WicketNepal)</a> by implementing live commentary system for ongoing matches.</li>
-                                            <li>Worked on training programs for interns to help with setting up tools, docker environments, Linux environments, git, web services and assisting development of WordPress themes.</li>
+                                            <li>Worked on training programs for interns to help with setting up tools, docker environments, Linux environments, git, web services and assisting development of WordPress themes to ensure coding standards in the company.</li>
 
                                             </ul>
                                         </span>
@@ -71,7 +71,7 @@ class About extends Component {
                                         </span>
                                         <div className="sep-medium"></div>
                                         <span>
-                                        <strong>Consultation and Side Projects</strong>
+                                        <strong>Consultations and Side Projects</strong>
                                         <div className="sep-small"></div>
                                                 <ul>
                                                     <li>Developed a musical chord progression generating <a class="work-url" href="https://github.com/gmrsagar/chord-pro">app</a> using React.js.</li>
