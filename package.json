@@ -31,7 +31,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    
     "sass-loader": "^7.1.0"
   }
 }
