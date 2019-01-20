@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="544px" height="589px" viewBox="0 0 544 589" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="416px" height="516px" viewBox="0 0 416 516" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
     <title>Group 10 Copy</title>
     <desc>Created with Sketch.</desc>
@@ -8,12 +8,10 @@
         <polygon id="path-3" points="0.59435 0.943409091 6.3836 0.943409091 6.3836 15.9090909 0.59435 15.9090909"></polygon>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-10-Copy">
+        <g id="Group-10-Copy" transform="translate(-86.000000, -18.000000)">
             <g id="Group-7">
                 <g id="Group-108">
-                    <g id="Group-3" fill="#F4F5F7">
-                        <path d="M-0.000188888889,369.353268 C-0.000188888889,423.08607 120.741367,416.500686 119.075367,485.485647 C115.815144,620.679713 255.364367,620.268252 316.449144,502.817191 C384.959144,371.087426 342.323144,412.195398 443.682811,378.020044 C613.323922,320.820933 523.469478,236.862803 481.199922,190.825326 C415.952033,119.758974 492.618256,5.36276012 358.860367,24.4284613 C274.096478,36.5113669 159.856478,-55.3026591 156.592478,57.3614042 C153.332256,170.025467 -24.4669667,69.494488 40.7790333,237.623504 C53.8973667,271.425533 -0.000188888889,315.622474 -0.000188888889,369.353268 Z" id="Fill-1"></path>
-                    </g>
+                    <g id="Group-3"></g>
                     <polygon id="Fill-16" fill="#FFFFFF" points="277 256.209839 87 366 87 147.790161 277 38"></polygon>
                     <polygon id="Stroke-18" stroke="#000000" stroke-width="1.39999998" points="277 256.209839 87 366 87 147.790161 277 38"></polygon>
                     <path d="M167,260 L167,276.920343 C167,281.846922 170.556175,283.831812 174.941996,281.351638 L181.05992,277.894027 C185.445741,275.413853 189,277.398743 189,282.327198 L189,297" id="Stroke-20" stroke="#000000" stroke-width="1.39999998"></path>

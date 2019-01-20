@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="564px" height="589px" viewBox="0 0 564 589" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="416px" height="516px" viewBox="0 0 416 516" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
     <title>Group 10</title>
     <desc>Created with Sketch.</desc>
@@ -8,12 +8,10 @@
         <polygon id="path-3" points="0.297175 0.471704545 3.1918 0.471704545 3.1918 7.95454545 0.297175 7.95454545"></polygon>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-10">
+        <g id="Group-10" transform="translate(-106.000000, -18.000000)">
             <g id="Group-7">
                 <g id="Group-108">
-                    <g id="Group-3" fill="#F4F5F7">
-                        <path d="M19.9998111,369.353268 C19.9998111,423.08607 140.741367,416.500686 139.075367,485.485647 C135.815144,620.679713 275.364367,620.268252 336.449144,502.817191 C404.959144,371.087426 362.323144,412.195398 463.682811,378.020044 C633.323922,320.820933 543.469478,236.862803 501.199922,190.825326 C435.952033,119.758974 512.618256,5.36276012 378.860367,24.4284613 C294.096478,36.5113669 134.264,-55.6634971 131,57.0005661 C127.739778,169.664629 -50.0594444,69.13365 15.1865556,237.262666 C37.0331619,290.515227 19.9998111,315.622474 19.9998111,369.353268 Z" id="Fill-1"></path>
-                    </g>
+                    <g id="Group-3"></g>
                     <polygon id="Fill-16" fill="#433A84" points="297 256.209839 107 366 107 147.790161 297 38"></polygon>
                     <polygon id="Stroke-18" stroke="#000000" stroke-width="1.39999998" points="297 256.209839 107 366 107 147.790161 297 38"></polygon>
                     <path d="M187,260 L187,276.920343 C187,281.846922 190.556175,283.831812 194.941996,281.351638 L201.05992,277.894027 C205.445741,275.413853 209,277.398743 209,282.327198 L209,297" id="Stroke-20" stroke="#44E291" stroke-width="1.39999998"></path>

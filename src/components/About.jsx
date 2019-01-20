@@ -13,7 +13,7 @@ class About extends Component {
                                 Hi, I'm Sagar, a software engineer with 2+ years of experience in full stack web development. I help businesses build digital solutions using PHP, JavaScript (React.js) and  MySQL.
                                     <div className="sep-small"></div>
                                     <span>
-                                    I am passionate about building prolific and scalable products that are valuable to the users. 
+                                    I am passionate about building scalable products that are valuable to the users. 
                                     When I am not coding or learning, I love to play the guitar. 
                                     </span>
                                 </p>
@@ -30,7 +30,7 @@ class About extends Component {
                                             <div className="sep-small"></div>
                                             Git, Docker, Amazon Web Services, REST, MySQL, MongoDB
                                             <div className="sep-small"></div>
-                                            Command Line Interface, Linux, OSX and Windows environments,Microservices, OOP, CI, SOLID, Deployment, Unit Testing
+                                            Command Line Interface, Linux, OSX and Windows environments, Microservices, OOP, CI, SOLID, Deployment, Unit Testing
                                         </span>
                                     </div>
                                 </div>

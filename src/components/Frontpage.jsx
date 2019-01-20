@@ -11,7 +11,7 @@ class Frontpage extends Component{
                 <h1>Hello World, <br/> I am Sagar Ghimire.</h1>
                 <div className="code-text"> &lt; /h1 &gt;</div>
                 <p className="description-text">
-                  I am a Web Developer who helps businesses build digital solutions, scalable products that are valuable to the users, using JavaScript, PHP and MySQL.
+                  I am a Web Developer who helps businesses build digital solutions, scalable products that are valuable to the users.
                 </p>
               </div>
             </div>
