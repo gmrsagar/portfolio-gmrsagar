@@ -8,12 +8,18 @@ import React, { Component } from 'react';
 import './.App.scss';
 
 // Components
+import ReactGA from 'react-ga';
 import Sidebar from './components/Sidebar';
 import Frontpage from './components/Frontpage';
 import Work from './components/Work';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+
+function initializeReactGA() {
+  ReactGA.initialize('UA-132564607-1');
+  ReactGA.pageview('/homepage');
+}
 
 class App extends Component {
   render() {
