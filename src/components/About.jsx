@@ -9,16 +9,12 @@ class About extends Component {
                         <div className="col-sm-12 col-md-9 col-lg-7">
                             <div className="main-section" id="about">
                                 <h1>About Me</h1>
-                                <p className="description-text">
-                                Hi, I'm Sagar, a software engineer with 2+ years of experience in full stack web development. I help businesses build digital solutions using PHP, JavaScript (React.js) and  MySQL.
-                                    <div className="sep-small"></div>
-                                    <span>
-                                    I am passionate about building scalable products that are valuable to the users. 
-                                    When I am not coding or learning, I love to play the guitar. 
-                                    </span>
+                                <p className="description-text"> Hi, I'm Sagar, a software engineer with 2+ years of experience in full stack web development. I help businesses build digital solutions using PHP, JavaScript (React.js) and  MySQL.
+                                <div className="sep-small"></div>
+                                <span>I am passionate about building scalable products that are valuable to the users.<br></br> When I am not coding or learning, I love to play the guitar. 
+                                </span>
                                 </p>
                                 <div className="sep-large"></div>
-
                                 <div className="skills-section">
                                     <div className="project-card-title">Skills</div>
                                     <div className="description-text">
@@ -34,16 +30,14 @@ class About extends Component {
                                         </span>
                                     </div>
                                 </div>
-
                                 <div className="sep-large"></div>
-
                                 <div className="work-section">
                                     <div className="project-card-title">Work Experience</div>
                                     <div className="description-text">
                                     <div className="sep-small"></div>
                                         <span>
                                         <strong>Web Developer</strong>
-                                        <span><strong><a class="company-url" href="https://www.growcept.com" target="_blank">Growcept Pvt. Ltd</a></strong>, Kathmandu, Nepal | April 2017 - June 2018</span>
+                                        <span><strong><a class="company-url" href="https://www.growcept.com" rel="noopener noreferrer" target="_blank">Growcept Pvt. Ltd</a></strong>, Kathmandu, Nepal | April 2017 - June 2018</span>
                                         <div className="sep-small"></div>
                                             Responsibilities:
                                             <ul>
@@ -52,13 +46,12 @@ class About extends Component {
                                             <li>Standardized theme development process which improved scalability and cut down rework by at least 20%.</li>
                                             <li>Improved user experience for a national sports website <a class="work-url" href="https://www.wicketnepal.com/">(WicketNepal)</a> by implementing live commentary system for ongoing matches.</li>
                                             <li>Worked on training programs for interns to help with setting up tools, docker environments, Linux environments, git, web services and assisting development of WordPress themes to ensure coding standards in the company.</li>
-
                                             </ul>
                                         </span>
                                         <div className="sep-medium"></div>
                                         <span>
                                         <strong>Back-End Developer</strong>
-                                        <span><strong><a class="company-url" href="https://www.intellisoftnepal.com/web/" target="_blank">Intellisoft Nepal</a></strong>, Kathmandu, Nepal | March 2016 - March 2017</span>
+                                        <span><strong><a class="company-url" href="https://www.intellisoftnepal.com/web/" target="_blank" rel="noopener noreferrer">Intellisoft Nepal</a></strong>, Kathmandu, Nepal | March 2016 - March 2017</span>
                                         <div className="sep-small"></div>
                                                 Responsibilities:
                                                 <ul>
@@ -73,14 +66,13 @@ class About extends Component {
                                         <span>
                                         <strong>Consultations and Side Projects</strong>
                                         <div className="sep-small"></div>
-                                                <ul>
-                                                    <li>Developed a musical chord progression generating <a class="work-url" href="https://github.com/gmrsagar/chord-pro">app</a> using React.js.</li>
-                                                    <li>Contributed in developing and maintaining <a class="work-url" href="https://github.com/geshan/acpwvs-api"> Node.js REST API </a>for a list of tech(ish) companies in Australia providing work visa that updates content into Airtable utilizing Continuous Deployment on Heroku.</li>
-                                                </ul>
+                                            <ul>
+                                                <li>Developed a musical chord progression generating <a class="work-url" href="https://github.com/gmrsagar/chord-pro">app</a> using React.js.</li>
+                                                <li>Contributed in developing and maintaining <a class="work-url" href="https://github.com/geshan/acpwvs-api"> Node.js REST API </a>for a list of tech(ish) companies in Australia providing work visa that updates content into Airtable utilizing Continuous Deployment on Heroku.</li>
+                                            </ul>
                                         </span>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>

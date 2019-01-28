@@ -36,9 +36,6 @@ class Sidebar extends Component {
             <AutoAffix>
               <div className="sidebar pl-5 pt-4 d-none d-sm-none d-md-none d-lg-block">
                 <div className="App-logo">SG</div>
-                {/*
-                  * Navigation
-                  */}
                 <div className="nav">
                   <div className="nav-item pb-3 active">
                   <a href="#home"
@@ -61,7 +58,7 @@ class Sidebar extends Component {
                     </a>
                   </div>
                   <div className="nav-item pb-3">
-                    <a href="https://www.medium.com/@gmrsagar" target="_blank"
+                    <a href="https://www.medium.com/@gmrsagar" rel="noopener noreferrer" target="_blank"
                       onMouseEnter={ () => this.changeNavImage('imgBlog', Icon_blog_active) }
                       onMouseLeave={ () => this.changeNavImage('imgBlog', Icon_blog ) }>
                     <div className="nav-icon--holder">

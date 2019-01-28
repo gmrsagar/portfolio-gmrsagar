@@ -28,30 +28,25 @@ class Social extends Component {
     render() {
         return (
             <div className="social-icons">
-
-                <a href="https://www.github.com/gmrsagar/" target="_blank">
-                    <img
-                    onMouseEnter={ () => this.changeSocialImage('github', Icon_github_active) }
-                    onMouseLeave={ () => this.changeSocialImage('github', Icon_github ) }
-                    src= { this.state.socialImages.github } alt="Github" className="social-icon"/>
+                <a href="https://www.github.com/gmrsagar/" rel="noopener noreferrer" target="_blank">
+                    <img onMouseEnter={ () => this.changeSocialImage('github', Icon_github_active) }
+                        onMouseLeave={ () => this.changeSocialImage('github', Icon_github ) }
+                        src= { this.state.socialImages.github } alt="Github" className="social-icon"/>
                 </a>
-                <a href="https://www.medium.com/@gmrsagar/" target="_blank">
-                    <img
-                    onMouseEnter={ () => this.changeSocialImage('medium', Icon_medium_active) }
-                    onMouseLeave={ () => this.changeSocialImage('medium', Icon_medium ) }
-                    src= { this.state.socialImages.medium } alt="Medium" className="social-icon"/>
+                <a href="https://www.medium.com/@gmrsagar/" rel="noopener noreferrer" target="_blank">
+                    <img onMouseEnter={ () => this.changeSocialImage('medium', Icon_medium_active) }
+                        onMouseLeave={ () => this.changeSocialImage('medium', Icon_medium ) }
+                        src= { this.state.socialImages.medium } alt="Medium" className="social-icon"/>
                 </a>
-                <a href="https://www.linkedin.com/in/gmrsagar/" target="_blank">
-                    <img
-                    onMouseEnter={ () => this.changeSocialImage('linkedin', Icon_linkedin_active) }
-                    onMouseLeave={ () => this.changeSocialImage('linkedin', Icon_linkedin ) }
-                    src= { this.state.socialImages.linkedin } alt="LinkedIn" className="social-icon"/>
+                <a href="https://www.linkedin.com/in/gmrsagar/" rel="noopener noreferrer" target="_blank">
+                    <img onMouseEnter={ () => this.changeSocialImage('linkedin', Icon_linkedin_active) }
+                        onMouseLeave={ () => this.changeSocialImage('linkedin', Icon_linkedin ) }
+                        src= { this.state.socialImages.linkedin } alt="LinkedIn" className="social-icon"/>
                 </a>
-                <a href="https://www.twitter.com/gmrsagar/" target="_blank">
-                    <img
-                    onMouseEnter={ () => this.changeSocialImage('twitter', Icon_twitter_active) }
-                    onMouseLeave={ () => this.changeSocialImage('twitter', Icon_twitter ) }
-                    src= { this.state.socialImages.twitter } alt="Twitter" className="social-icon"/>
+                <a href="https://www.twitter.com/gmrsagar/" rel="noopener noreferrer" target="_blank">
+                    <img onMouseEnter={ () => this.changeSocialImage('twitter', Icon_twitter_active) }
+                        onMouseLeave={ () => this.changeSocialImage('twitter', Icon_twitter ) }
+                        src= { this.state.socialImages.twitter } alt="Twitter" className="social-icon"/>
                 </a>
             </div>
         );
