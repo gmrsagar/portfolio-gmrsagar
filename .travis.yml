@@ -20,7 +20,7 @@ after_success:
   - git clone git://${GH_REPO}
   - mv -f ${FILES} ${REPO}
   - cd ${REPO}
-  - git remote
+  - git remote add origin https://gmrsagar:${OAUTH}@github.com/gmrsagar/gmrsagar.github.io
   - git config user.email ${EMAIL}
   - git config user.name ${USERNAME}
   - git add .
