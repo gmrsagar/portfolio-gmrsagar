@@ -26,4 +26,4 @@ after_success:
   - git config user.name ${USERNAME}
   - git add .
   - git commit -m "Pushed from travis"
-  - git push "https://gmrsagar:${PASS}@${GH_REPO}" master
+  - git push "https://${PASS}@github.com/gmrsagar/${REPO}.git" master
