@@ -20,9 +20,10 @@ after_success:
   - git clone git://${GH_REPO}
   - mv -f ${FILES} ${REPO}
   - cd ${REPO}
-  - git remote
+  - git remote rm origin
+  - git remote add origin https://gmrsagar:${OAUTH}@github.com/gmrsagar/gmrsagar.github.io
   - git config user.email ${EMAIL}
   - git config user.name ${USERNAME}
   - git add .
   - git commit -m "Pushed from travis"
-  - git push "https://${OAUTH}@${GH_REPO}" master > /dev/null 2>&1
+  - git push origin master
