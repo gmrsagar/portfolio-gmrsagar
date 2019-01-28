@@ -1,0 +1,29 @@
+language: node_js
+node_js:
+  - "stable"
+env:
+  global:
+    - USER="gmrsagar"
+    - CI=false
+    - USERNAME="Sagar Ghimire"
+    - EMAIL="gmrsagar@gmail.com"
+    - REPO="gmrsagar.github.io"
+    - FILES="./build/"
+    - GH_REPO="github.com/${USER}/${REPO}.git"
+    - secure: "aYEV4sCaQVeOb0hVo32rP634luIBnBqjt2Jy5k2OkzDN5U4iKshVS32NT2YeWfe4BgmkYNfx8eU436ea4NWBn27uoWowZrBkS1mq5osHUxYvrS1+Zh40Lbh7io146YnUPsKgZscu1sjEB0L95qHOOoJ1BmW1FxYSK/Dig+4jnRdj6Xl6dBQ5/ry4o4o+V7bc9Y4W8HitOredcQwOm7JA+SG75YRP+6jJi+LQMeb2X3uTH/oQRHWr9+LCdF9wBPUBM1wHe5w8bgp9ge3u2f57btimokO1gF/gAznfw0SjdN4b2+JUmTy81pMIyDF7WPUW2qtTxiAvH0NN3M/+MD4B6mqgvZFt93gJ7FS/H0E0dYGajGF80/Nx4qSqA9bNK/flLjv123CRwplZbzkNAU5EZVquWOk8eMzQJoALkJKvWByVwfxqBzqnp1WrDy2ZESUO5j4F0HZ7sKgXE3b8th7WaA6zK3p+Q3ttOv37qfwNNFBAOMPXXi4e86aBAnkiavSzOpIv0MtAf2Lq2BVoRczSw+KvzPKFLls4cCEF1JEBn2gDDacNgT9iFrJr048gw/mQOW83iC2UvdoRJy5GCoYrcfWWOJUJ5NbRTh2p8uJ73Uh0h9D06p+t5zmtrjPK83y61UV+a0X8mzxyidjB87NVstzB0UniPQAHwD3pGBvUr+c="
+cache:
+  directories:
+    - node_modules
+script:
+  - npm run build
+after_success:
+  - MESSAGE=$(git log --format=%B -n 1 $TRAVIS_COMMIT)
+  - git clone git://${GH_REPO}
+  - mv -f ${FILES} ${REPO}
+  - cd ${REPO}
+  - git remote
+  - git config user.email ${EMAIL}
+  - git config user.name ${USERNAME}
+  - git add ${FILES}
+  - git commit -m ${MESSAGE}
+  - git push "https://${OAUTH}@${GH_REPO}" master > /dev/null 2>&1
