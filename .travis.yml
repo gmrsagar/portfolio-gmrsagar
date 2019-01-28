@@ -4,6 +4,8 @@ node_js:
 env:
   global:
     - USER="gmrsagar"
+    - CI=false
+    - USERNAME="Sagar Ghimire"
     - EMAIL="gmrsagar@gmail.com"
     - REPO="gmrsagar/gmrsagar.github.io"
     - FILES="./build/"
@@ -21,7 +23,7 @@ after_success:
   - cd ${REPO}
   - git remote
   - git config user.email ${EMAIL}
-  - git config user.name ${USER}
+  - git config user.name ${USERNAME}
   - git add ${FILES}
   - git commit -m ${MESSAGE}
   - git push "https://${TRAVIS_SECURE_TOKEN_NAME}@${GH_REPO}" master > /dev/null 2>&1
