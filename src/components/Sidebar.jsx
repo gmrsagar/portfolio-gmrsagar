@@ -6,6 +6,8 @@ import Icon_home_active from '../img/home_active.svg';
 import Icon_home from '../img/home.svg';
 import Icon_work_active from '../img/work_active.svg';
 import Icon_work from '../img/work.svg';
+import Icon_blog_active from '../img/blog_active.svg';
+import Icon_blog from '../img/blog.svg';
 import Icon_about_active from '../img/about_active.svg';
 import Icon_about from '../img/about.svg';
 import Icon_contact_active from '../img/contact_active.svg';
@@ -17,6 +19,7 @@ class Sidebar extends Component {
     navImages: {
       imgHome: Icon_home,
       imgWorks: Icon_work,
+      imgBlog: Icon_blog,
       imgAbout: Icon_about,
       imgContact: Icon_contact
     }
@@ -58,6 +61,16 @@ class Sidebar extends Component {
                     </a>
                   </div>
                   <div className="nav-item pb-3">
+                    <a href="https://www.medium.com/@gmrsagar" target="_blank"
+                      onMouseEnter={ () => this.changeNavImage('imgBlog', Icon_blog_active) }
+                      onMouseLeave={ () => this.changeNavImage('imgBlog', Icon_blog ) }>
+                    <div className="nav-icon--holder">
+                    <img src={ this.state.navImages.imgBlog }  alt="" className="nav-icon"/>
+                    </div>
+                      <div className="nav-title">Blog</div>
+                    </a>
+                  </div>
+                  <div className="nav-item pb-3">
                     <a href="#about"
                       onMouseEnter={ () => this.changeNavImage('imgAbout', Icon_about_active) }
                       onMouseLeave={ () => this.changeNavImage('imgAbout', Icon_about ) }>
@@ -78,17 +91,6 @@ class Sidebar extends Component {
                       <div className="nav-title">Contact Me </div>
                     </a>
                   </div>
-                  {/* coming soon */}
-                  {/* <div className="nav-item pb-3">
-                    <a href="#contact"
-                      onMouseEnter={ () => this.changeNavImage('imgContact', Icon_contact_active) }
-                      onMouseLeave={ () => this.changeNavImage('imgContact', Icon_contact ) }>
-                    <div className="nav-icon--holder">
-                    <img src={ this.state.navImages.imgContact }  alt="" className="nav-icon"/>
-                    </div>
-                      <div className="nav-title">Blog</div>
-                    </a>
-                  </div> */}
                 </div>
             </div>
           </AutoAffix>
