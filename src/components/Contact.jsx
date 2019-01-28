@@ -11,7 +11,7 @@ class Contact extends Component {
         buttonText: 'Send Message'
     }
 
-    formSubmit = (e) => {
+    formSubmit = async (e) => {
         e.preventDefault()
 
         this.setState({
@@ -23,12 +23,14 @@ class Contact extends Component {
             email: this.state.email,
             message: this.state.message
         }
-        axios.post('https://nodejs-express-r5t89d8xx.now.sh/api/v1', data)
-        .then( res => {
+
+        try {
+            await axios.post('https://nodejs-express-r5t89d8xx.now.sh/api/v1', data)
             this.setState({ sent: true }, this.resetForm())
-        })
-        .catch( () => {
-        })
+        } catch(err) {
+            console.log(err)
+        }
+
     }
 
     resetForm = () => {
