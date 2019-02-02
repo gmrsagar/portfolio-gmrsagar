@@ -8,7 +8,7 @@ env:
     - USERNAME="Sagar Ghimire"
     - EMAIL="gmrsagar@gmail.com"
     - REPO="gmrsagar.github.io"
-    - FILES="./build/*"
+    - FILES="./build/"
     - GH_REPO="github.com/${USER}/${REPO}.git"
     - secure: "FcfUgfbD48qedLugdE1tzZKlEoNpaXEdp1mBdXL8zVPvITgcjV7Y8skck4OQ1e+7KrCTyNPujieaVc/3z5dV4IeEgmxJrQDinpUuyWbSOQtiGur6RWll6jhdKeGYrBB8Th+sIBWLoOHGYeX7DYLqmRTjiqtkO5tfYi7z5ognWG7aOO2EtGH2B8oVbnQhpyADhjtVIFEKYm6RH8bq6cMpQc584ssFGl8r47tnfy9mnn79rBJNGg3gOTZim8qhBEXdvXkjHNPCwsJyaRB70BDw64bbgmkc8QnrnAUrz3+t3za4+ehFmaXw3lZ2CUNGk4w0If3V75eMPoPx09MhDL/CIWNxsZEe6o4otmcBQKq0Qa2Khn4RJvjKq7ANdSgsS79vKRo1flj0gD+TwsZzQEFw4AXGMzNj3Y8iP+6GRmbfQOo2g5dI4B4qNGV6HLS6uIhx5Pa4s4OCAlTFsDq3S/JgzYWpKs4NQpwY2hJBil8gYwr4fcV+yePOjtFDe+LMOr0yHHzpiW4Xhe+feALth3GjKnwgWnef6+M2z70KuE9RJfphgEhl5zW73U1a33p7EBq63Oq3XId5QkG7kI+fedq8cgptZ6Ej6ImnUTPfUbdTHDyRNfB0Sczlk2w2WlO35MKkFcnc9t30RJXrdmry8kV8u98EtC2OtTsUkwLTLggTxKU="
 
@@ -19,7 +19,7 @@ script:
   - npm run build
 after_success:
   - git clone git://${GH_REPO}
-  - mv -f ${FILES} ${REPO}
+  - rsync ${FILES} ${REPO}
   - cd ${REPO}
   - git remote
   - git config user.email ${EMAIL}

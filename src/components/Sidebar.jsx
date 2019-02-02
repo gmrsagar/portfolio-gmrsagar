@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { AutoAffix } from 'react-overlays';
+// import NavItem from './NavItem'
 
 // sidebar-icons
 import Icon_home_active from '../img/home_active.svg';
@@ -37,13 +38,14 @@ class Sidebar extends Component {
               <div className="sidebar pl-5 pt-4 d-none d-sm-none d-md-none d-lg-block">
                 <div className="App-logo">SG</div>
                 <div className="nav">
+                  {/* <NavItem/> */}
                   <div className="nav-item pb-3 active">
-                  <a href="#home"
+                    <a href="#home"
                       onMouseEnter={ () => this.changeNavImage('imgHome', Icon_home_active) }
                       onMouseLeave={ () => this.changeNavImage('imgHome', Icon_home ) }>
-                    <div className="nav-icon--holder">
-                    <img src={ this.state.navImages.imgHome }  alt="Home" className="nav-icon"/>
-                    </div>
+                      <div className="nav-icon--holder">
+                        <img src={ this.state.navImages.imgHome }  alt="Home" className="nav-icon"/>
+                      </div>
                       <div className="nav-title">Home</div>
                     </a>
                   </div>
@@ -52,8 +54,8 @@ class Sidebar extends Component {
                       onMouseEnter={ () => this.changeNavImage('imgWorks', Icon_work_active) }
                       onMouseLeave={ () => this.changeNavImage('imgWorks', Icon_work ) }>
                       <div className="nav-icon--holder">
-                      <img src={ this.state.navImages.imgWorks } alt="" className="nav-icon"/>
-                    </div>
+                        <img src={ this.state.navImages.imgWorks } alt="" className="nav-icon"/>
+                      </div>
                       <div className="nav-title">My Works</div>
                     </a>
                   </div>
@@ -77,7 +79,6 @@ class Sidebar extends Component {
                       <div className="nav-title">About Me</div>
                     </a>
                   </div>
-
                   <div className="nav-item pb-3">
                     <a href="#contact"
                       onMouseEnter={ () => this.changeNavImage('imgContact', Icon_contact_active) }
