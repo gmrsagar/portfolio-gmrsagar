@@ -25,7 +25,7 @@ class Contact extends Component {
         }
 
         try {
-            await axios.post('https://nodejs-express-r5t89d8xx.now.sh/api/v1', data)
+            await axios.post('https://nodejs-express-2rml59ma4.now.sh/api/v1', data)
             this.setState({ sent: true }, this.resetForm())
         } catch(err) {
             console.log(err)
